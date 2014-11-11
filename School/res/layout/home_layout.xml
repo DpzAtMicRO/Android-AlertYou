@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/manage_studnts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="onButtonClick"
+        android:text="Manage Students And Managers" />
+
+    <Button
+        android:id="@+id/attendence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="onButtonClick"
+        android:text="Attendence" />
+
+    <Button
+        android:id="@+id/general_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="onButtonClick"
+        android:text="General SMS" />
+
+    <Button
+        android:id="@+id/mark_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="onButtonClick"
+        android:text="Mark List SMS" />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.omak.school"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/alpha"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <provider
+            android:name="com.omak.db.ContentProviderDb"
+            android:authorities="com.omak.android.contentProviderAuthorities"
+            android:exported="false" />
+        <activity
+            android:name="com.omak.school.Splash"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.omak.school.HomeScreen"
+            android:screenOrientation="portrait"></activity>
+        
+        <activity 
+            android:name="com.omak.school.ManageStudentDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        
+        <activity 
+            android:name="com.omak.school.AddEditStudent"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        
+        <activity 
+            android:name="com.omak.school.InformActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        
+        <activity 
+            android:name="com.omak.school.AddEditStaff"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        
+        <activity 
+            android:name="com.omak.school.AttendenceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        
+        <activity 
+            android:name="com.omak.school.GeneralSms"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        
+        <activity 
+            android:name="com.omak.school.MarkDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+    </application>
+
+</manifest>
